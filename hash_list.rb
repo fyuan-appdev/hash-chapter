@@ -14,3 +14,13 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+p list_of_people.length
+
+list_of_people.length.times do |number|
+
+  list_of_people[number].fetch(:age)
+  if list_of_people[number].fetch(:age) >= 16
+    p list_of_people[number].fetch(:name)
+
+  end
+end
